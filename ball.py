@@ -36,6 +36,11 @@ class Ball:
         self.rectangle.x += self.speed_x
         self.rectangle.y += self.speed_y
 
+    def draw(self, screen):
+        pygame.draw.rect(screen, self.color, self.rectangle)
+
     def update(self, screen):
         self._ball_movement()
         pygame.draw.rect(screen, self.color, self.rectangle)
+
+

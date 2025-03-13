@@ -13,7 +13,8 @@ class Pong:
         self.screen = screen
         self.FPS = pygame.time.Clock()
 
-    def draw(self):
+    @staticmethod
+    def draw():
         pygame.display.flip()
 
     def main(self):
@@ -34,6 +35,3 @@ class Pong:
 if __name__ == "__main__":
     play = Pong(screen)
     play.main()
-
-
-
